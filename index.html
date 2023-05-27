@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&family=Stick+No+Bills:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <a href="#maincontent">Skip To Content &darr;</a>
+        <header role="banner" class="site-header" id="site-header">
+            <h1>Jam Box Studios</h1>
+            <nav role="navigation" class="main-nav">
+                <ul itemscope itemtype="https://schema.org/SiteNavigationElement" role="navigation">
+                    <li itemprop="mainContentOfPage"><a href="#">Home</a></li>
+                    <li itemprop="category"><a href="#">Products</a></li>
+                    <li itemprop="reservationFor"><a href="#">Reservation</a></li>
+                    <li itemprop="organization"><a href="#">Studio</a></li>
+                </ul>
+            </nav>
+            <img src="https://placekitten.com/1200/900" alt="Cat" role="img" aria-details="studiowebsite"
+                class="banner">
+        </header>
+        <main role="main" class="main-content" id="maincontent">
+            <h1>Welcome to Jam Box</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa
+                eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis
+                optio quia veritatis.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit
+                ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum!
+                Voluptate iusto error voluptatibus.</p>
+            <section role="region" class="owner">
+                <h2>Meet the owner</h2>
+                <ul itemscope itemtype="https://schema.org/OwnershipInfo" role="ownerinformation">
+                    <li itemprop="person">Name: John Doe</li>
+                    <li itemprop="jobrole">Title: CEO</li>
+                    <li itemprop="contentinfo">Email: johnjoe@jambox.ca</li>
+                    <li itemprop="contact">Phone: 613-000-0000</li>
+                </ul>
+                <h2>Address</h2>
+                <p>
+                    Jambox Studios
+                    123 Guitar Road,
+                    Musicville, Danceistan
+                    B3T 0L0
+                </p>
+            </section>
+            <div class="contact-section">
+                <h2>Contact Us</h2>
+                <form action="thanks.html">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Full Name">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Subject">
+                    <b>Your Message</b>
+                    <textarea></textarea>
+                    <!-- Adding class in the button tag for making font weighnt bold -->
+                    <button class="button" type="submit">Send</button>
+                </form>
+            </div>
+        </main>
+        <footer role="contentinfo" class="site-footer">
+            &copy; 2021 Jam Box Studios
+        </footer>
+        <a href="#site-header"><i class="fa-solid fa-arrow-up"></i>Back To Top</a>
+    </div>
+</body>
+
+</html>
